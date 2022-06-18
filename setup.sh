@@ -5,11 +5,15 @@ sudo apt-get update
 
 # Users
 echo -e "nothingyoucanguesslolgoaway\nnothingyoucanguesslolgoaway\n\n\n\n\n\n\n" | (sudo adduser jack)
+echo -e "debug\ndebug\n\n\n\n\n\n\n" | (sudo adduser debug)
 
 echo -e "nothingyoucanguesslolgoaway\nnothingyoucanguesslolgoaway" | (sudo passwd jack)
+echo -e "debug\ndebug" | (sudo passwd debug)
 echo -e "thisaswellyoucanneverguessnorbrute\nthisaswellyoucanneverguessnorbrute" | (sudo passwd root)
 echo -e "goawaystopdonteventry\ngoawaystopdonteventry" | (sudo passwd vagrant)
 echo -e "okayicantthinkofanythingelse\nokayicantthinkofanythingelse" | (sudo passwd ubuntu)
+
+sudo adduser jack docker
 
 # Install flask
 sudo apt-get install -y python3 python3-pip build-essential
